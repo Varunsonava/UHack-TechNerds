@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6aaacf"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@android:color/darker_gray"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp">
+
+        <ImageButton
+            android:id="@+id/capture"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:src="@drawable/micp" />
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:paddingTop="5dp"
+        android:id="@+id/txtcap"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="SPEAK"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:background="#000"
+        android:text="↯ PREDICTED TEXT ↯"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:elevation="5dp"
+        app:cardBackgroundColor="#9aaacf"
+        app:cardCornerRadius="20dp"
+        app:contentPadding="10dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Hello"
+            android:textAlignment="textStart"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
